@@ -7,9 +7,9 @@ b = sint(8128639879213)
 # # this line is to let all machines in sync
 c = b * b
 
-start = time.time()
+start_timer(1)
 res = m_0 + (m_1 - m_0) * b
-stop = time.time()
+stop_timer(1)
 res_open = res.reveal()
 print_ln("result: %s", res_open)
 print_ln("%s", stop - start)
